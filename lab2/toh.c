@@ -7,20 +7,20 @@ void main() {
     printf("Enter the number of disks : ");
     scanf("%d", &n);
     printf("For recursive solution press1 else press 2 for non recursive solution ");
-    scanf("%d", &b);
- if(b==1)
+    scanf("%d", &a);
+ if(a==1)
  {
         printf("\n");
     printf("The sequence of moves involved in the Tower of Hanoi are :\n");
     hanoi(n, 'A', 'B', 'C');
  }
- else if (b==2)
+ else if (a==2)
  {
-         for (a = 1; a < (1 << n); a++)
+         for (b = 1; b < (1 << n); b++)
     {
        
 
-      printf("Move from rod %d to rod %d\n",(a & (a-1))%3,(((a |(a-1)) + 1)%3)); 
+      printf("Move from rod %d to rod %d\n",(b & (b-1))%3,(((b |(b-1)) + 1)%3)); 
    }
 }
 else 
