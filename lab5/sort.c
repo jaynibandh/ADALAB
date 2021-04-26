@@ -74,14 +74,15 @@ if(y==0)
     start = time(NULL);
     sort(a,n);
     end = time(NULL);
-    printf("Time taken is %.2f seconds",
-           difftime(end, start));
-                for(i=0;i<n;i++)
+                    for(i=0;i<n;i++)
     {
               
         printf("\n sorted : %d nmbr added to the array",a[i]);
   
     }
+    printf("Time taken is %.2f seconds",
+           difftime(end, start));
+
 
 }
 else if(y==1)
@@ -89,14 +90,15 @@ else if(y==1)
     start = time(NULL);
     bubblesort(a, n);
     end = time(NULL);
-    printf("Time taken is %.2f seconds",
-           difftime(end, start));
-                for(i=0;i<n;i++)
+                    for(i=0;i<n;i++)
     {
               
         printf("\n sorted : %d nmbr added to the array",a[i]);
   
     }
+    printf("Time taken is %.8f seconds",
+           difftime(end, start));
+
 }
 else{
     printf("sorry wrong methodology");
