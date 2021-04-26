@@ -80,7 +80,7 @@ if(y==0)
         printf("\n sorted : %d nmbr added to the array",a[i]);
   
     }
-    printf("Time taken is %.2f seconds",
+    printf("Time taken is %.8f seconds",
            difftime(end, start));
 
 
