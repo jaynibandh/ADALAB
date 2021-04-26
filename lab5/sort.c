@@ -35,9 +35,10 @@ void sort(int a[], int n)
 }
 void bubblesort(int a[], int n)
 {
+    int i,j,temp;
       for(i=0;i<n-1;i++)
   {
-    for(j=0;d<n-i-1;j++)
+    for(j=0;j<n-i-1;j++)
     {
       if(a[j]>a[j+1]) 
       {
@@ -65,28 +66,40 @@ printf("+enter size of array btw 1 to 23999 ");
         printf(" \n %d nmbr added to the array",a[i]);
   
     }
-     printf("\n :entr method of searching 1 for bubblesort and 0 for selectionsort");
+     printf("\n :entr method of sorting 1 for bubblesort and 0 for selectionsort");
  scanf("%d",&y); 
 
 if(y==0)
 {
     start = time(NULL);
-    result = sort(a,n);
+    sort(a,n);
     end = time(NULL);
     printf("Time taken is %.2f seconds",
            difftime(end, start));
+                for(i=0;i<n;i++)
+    {
+              
+        printf("\n sorted : %d nmbr added to the array",a[i]);
+  
+    }
 
 }
 else if(y==1)
 {
     start = time(NULL);
-    	result = bubblesort(a, n);
+    bubblesort(a, n);
     end = time(NULL);
     printf("Time taken is %.2f seconds",
            difftime(end, start));
+                for(i=0;i<n;i++)
+    {
+              
+        printf("\n sorted : %d nmbr added to the array",a[i]);
+  
+    }
 }
 else{
     printf("sorry wrong methodology");
 }
-}
+
 }
