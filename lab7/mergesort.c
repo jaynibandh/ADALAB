@@ -79,7 +79,7 @@ printf("enter array size:"/n)
   scanf("%d",&n);
    for(i=0;i<n;i++)
     {
-    arr[i]=rand()%(n/10); 
+    arr[i]=rand(); 
     }
     printf("Given array is \n");
 	printArray(arr, n);
