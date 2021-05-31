@@ -11,3 +11,4 @@
      - Breadth First Search
      - Depth First Search
 - Lab7:Time functions to merge sort
+- Lab8:Quick sort
