@@ -1,23 +1,29 @@
 #include<stdio.h>
- 
+ #include<time.h>
+ #include <stdlib.h>
 void create(int []);
 void down_adjust(int [],int);
  
 void main()
 {
-int heap[30],n,i,last,temp;
-printf("Enter no. of elements:");
+    clock_t start,end;
+    double t;
+int heap[60000],n,i,last,temp;
+printf("Enter no. of elements:\n");
 scanf("%d",&n);
+for(int o;o<4;o++)
+{
+
 printf("\nEnter elements:");
 for(i=1;i<=n;i++)
-scanf("%d",&heap[i]);
-//create a heap
+heap[i]=rand()%30000;
+start = clock();
 heap[0]=n;
 create(heap);
-//sorting
+
 while(heap[0] > 1)
 {
-//swap heap[1] and heap[last]
+
 last=heap[0];
 temp=heap[1];
 heap[1]=heap[last];
@@ -25,17 +31,21 @@ heap[last]=temp;
 heap[0]--;
 down_adjust(heap,1);
 }
- 
-//print sorted data
+ end = clock();
+
+t=((double) (end - start)) / CLOCKS_PER_SEC;
+printf("time taken:%f",t);
 printf("\nArray after sorting:\n");
 for(i=1;i<=n;i++)
 printf("%d ",heap[i]);
+n=n*10;
+}
 }
  
 void create(int heap[])
 {
 int i,n;
-n=heap[0]; //no. of elements
+n=heap[0]; 
 for(i=n/2;i>=1;i--)
 down_adjust(heap,i);
 }
