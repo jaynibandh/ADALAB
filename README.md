@@ -9,8 +9,15 @@
 - folder:labtest dated 14/6/21 
 - lab5:Time functions to combined selection and bubble sort .
 - Lab6:
-     - Breadth First Search
-     - Depth First Search
-- Lab7:Time functions to merge sort
-- Lab8:Quick sort
-- Lab9:Heap sort
+     - Breadth First Search.
+     - Depth First Search.
+- Lab7:Time functions to merge sort.
+- Lab8:Quick sort.
+- Lab9:Heap sort.
+- Lab10: 
+     - Floyd’s algorithm - All Pair Shortest paths problem.
+     - dynamic programming - 0/1 Knapsack problem.
+- Lab11:
+     - Prim’s algorithm - Minimum Cost Spanning Tree of a given undirected graph.
+     - Kruskal’s algorithm - Minimum Cost Spanning Tree of a given undirected graph.
+     - Dijkstra’s algorithm - Find shortest paths to other vertices from a given starting node.
