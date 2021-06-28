@@ -1,7 +1,5 @@
 #include<stdio.h>
  
-#include<conio.h>
- 
 int a,b,u,v,n,i,j,ne=1;
  
 int visited[100]={0},min,mincost=0,cost[100][100];
@@ -10,7 +8,6 @@ void main()
  
 {
  
-	clrscr();
  
 	printf("\nEnter the number of nodes:");
  
@@ -76,9 +73,7 @@ void main()
  
 	printf("\n Minimun cost=%d",mincost);
  
-	getch();
  
 }
- 
  
  
